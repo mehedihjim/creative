@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* ---Important Links--- */
+
+/* Common Css */
+:root{
+    --ff-primary: "Inter", sans-serif;
+
+    --clr-primary: #5956E8;
+    --clr-text: #181818;
+    --clr-white: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 1170px;
+}
+
+.cmnTitle{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cmnTitle h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.cmnTitle p{
+    width: 542px;
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+/* Common Css */
+
+/* Nav CSS Starts */
+nav{
+    padding: 50px 0 35px;
+    background-color: #fff !;
+}
+
+.navbar-nav{
+    gap: 50px;
+}
+
+.navbar-nav .nav-link{
+    font-family: var(--ff-primary) !important;
+    color: var(--clr-text);
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--clr-primary);
+}
+
+nav .navbarBtn{
+    color: white;
+    background: var(--clr-primary);
+    outline: none;
+    padding: 13px 24px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+nav .navbarBtn:hover{
+    background-color: #2926ac;
+}
+/* Nav CSS Ends */
+
+/* Banner CSS Starts */
+#banner{
+    padding: 165px 0 200px;
+    background-color: var(--clr-primary);
+}
+
+#banner .imgCol{
+    display: flex;
+    justify-content: end;
+}
+
+#banner .row{
+    align-items: center;
+}
+
+#banner h1{
+    color: #FFFEFE;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 80px;
+    margin-bottom: 25px;
+}
+
+#banner p{
+    width: 542px;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.bannerBtn{
+    padding: 11px 20px;
+    border: solid 1px white;
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition:  .4s;
+    -webkit-transition:  .4s;
+    -moz-transition:  .4s;
+    -ms-transition:  .4s;
+    -o-transition:  .4s;
+}
+
+.bannerBtn:hover{
+    color: var(--clr-white);
+    background-color: transparent;
+}
+/* Banner CSS Ends */
+
+/* Service CSS Starts */
+#service{
+    padding: 83px 0 17px;
+}
+/* Service CSS Ends */
