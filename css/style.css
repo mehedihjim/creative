@@ -17,6 +17,8 @@ a {
 ul,
 ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -442,7 +444,7 @@ nav .navbarBtn:hover {
     color: #5D5D5D;
 }
 
-.bigIcon{
+.bigIcon {
     position: absolute;
     right: 30px;
     bottom: 24px;
@@ -450,13 +452,15 @@ nav .navbarBtn:hover {
     color: var(--clr-primary);
     opacity: 10%;
 }
+
 /* Review CSS Ends */
 
 /* Blog CSS Starts */
-#blog{
+#blog {
     padding: 0 0 100px 0;
 }
-.blogItem{
+
+.blogItem {
     padding: 17px 19px 46px 19px;
     border: #E3E3E3 solid 1px;
     border-radius: 10px;
@@ -466,52 +470,52 @@ nav .navbarBtn:hover {
     -o-border-radius: 10px;
 }
 
-.blogItem .sub__heading{
+.blogItem .sub__heading {
     display: flex;
     gap: 30px;
     margin-top: 20px;
     margin-left: 16px;
 }
 
-.blogItem .sub__heading .admin{
+.blogItem .sub__heading .admin {
     display: flex;
     gap: 10px;
 }
 
-.blogItem .sub__heading .admin . i{
+.blogItem .sub__heading .admin i {
     font-size: 18px;
     color: #5D5D5D;
 }
 
-.blogItem .sub__heading .admin h6{
+.blogItem .sub__heading .admin h6 {
     font-family: var(--ff-primary);
     font-size: 16px;
     font-weight: 400;
     color: #5D5D5D;
 }
 
-.blogItem .sub__heading .date{
+.blogItem .sub__heading .date {
     display: flex;
     gap: 10px;
 }
 
-.blogItem .sub__heading .date . i{
+.blogItem .sub__heading .date i {
     font-size: 18px;
     color: #5D5D5D;
 }
 
-.blogItem .sub__heading .date h6{
+.blogItem .sub__heading .date h6 {
     font-family: var(--ff-primary);
     font-size: 16px;
     font-weight: 400;
     color: #5D5D5D;
 }
 
-.blogItem .textSection{
+.blogItem .textSection {
     margin-left: 16px;
 }
 
-.blogItem .textSection h3{
+.blogItem .textSection h3 {
     width: 315px;
     font-family: var(--ff-primary);
     font-weight: 600;
@@ -520,7 +524,7 @@ nav .navbarBtn:hover {
     margin-top: 10px;
 }
 
-.blogItem .textSection p{
+.blogItem .textSection p {
     width: 300px;
     font-family: var(--ff-primary);
     font-weight: 400;
@@ -531,7 +535,7 @@ nav .navbarBtn:hover {
     margin-bottom: 10px;
 }
 
-.blogItem .textSection a{
+.blogItem .textSection a {
     width: 300px;
     font-family: var(--ff-primary);
     font-weight: 600;
@@ -547,13 +551,132 @@ nav .navbarBtn:hover {
     -o-transition: .4s;
 }
 
-.blogItem .textSection a:hover{
+.blogItem .textSection a:hover {
     color: #2926ac;
 }
+
 /* Blog CSS Ends */
 
 
-footer{
+footer {
     background-color: rgba(89, 86, 232, 0.10);
     padding: 100px 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo p {
+    margin: 15px 0 20px 0;
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+
+.wrapper {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-family: var(--ff-primary);
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .facebook {
+    color: #337FFF;
+}
+
+.wrapper .twitter {
+    color: #33CCFF;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerMenu h3 {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--clr-text);
+    margin-bottom: 15px;
+}
+
+.footerMenu ul {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+footer ul a {
+    color: #5D5D5D;
 }
