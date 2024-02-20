@@ -321,22 +321,239 @@ nav .navbarBtn:hover {
 .portfolioContent .imgBox:hover .portOverlay a {
     color: #fff;
 }
+
 /* Portfolio CSS Ends */
 
 /* Team CSS Starts */
-.teamItem{
+#team {
+    padding: 0 0 50px 0;
+}
+
+.teamItem {
     position: relative;
 }
 
 .teamOverlay {
     width: 370px;
     height: 444px;
-    background: rgb(255,255,255);
-background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(89,86,232,1) 10%);
+    background: rgb(89, 86, 232);
+    background: linear-gradient(0deg, rgba(89, 86, 232, 1) 0%, transparent 45%);
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 34px;
 }
+
+.teamOverlay h3 {
+    font-family: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--clr-white);
+}
+
+.teamOverlay h4 {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--clr-white);
+}
+
 /* Team CSS Ends */
 
+/* Review CSS Starts */
+#reviews {
+    padding: 0 0 100px 0;
+}
 
+.reviewTitle h2 {
+    width: 603px;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+.reviewTitle p {
+    width: 542px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--clr-text);
+    opacity: 70%;
+    margin-bottom: 50px;
+}
+
+.reviewItem {
+    padding: 48px;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+.reviewIcon {
+    display: flex;
+    gap: 7px;
+    padding: 0;
+    font-size: 20px;
+    color: #FBBF25;
+    margin: 30px 0 0 0;
+}
+
+.reviewText {
+    width: 274px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--clr-text);
+    opacity: 70%;
+    margin: 20px 0 15px 0;
+}
+
+.reviewItem .customerName {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--clr-text);
+}
+
+.reviewItem .customerName__title {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+
+.bigIcon{
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+    font-size: 64px;
+    color: var(--clr-primary);
+    opacity: 10%;
+}
+/* Review CSS Ends */
+
+/* Blog CSS Starts */
+#blog{
+    padding: 0 0 100px 0;
+}
+.blogItem{
+    padding: 17px 19px 46px 19px;
+    border: #E3E3E3 solid 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.blogItem .sub__heading{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.blogItem .sub__heading .admin{
+    display: flex;
+    gap: 10px;
+}
+
+.blogItem .sub__heading .admin . i{
+    font-size: 18px;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .admin h6{
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .date{
+    display: flex;
+    gap: 10px;
+}
+
+.blogItem .sub__heading .date . i{
+    font-size: 18px;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .date h6{
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+
+.blogItem .textSection{
+    margin-left: 16px;
+}
+
+.blogItem .textSection h3{
+    width: 315px;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20;
+    color: var(--clr-text);
+    margin-top: 10px;
+}
+
+.blogItem .textSection p{
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.blogItem .textSection a{
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--clr-primary);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.blogItem .textSection a:hover{
+    color: #2926ac;
+}
+/* Blog CSS Ends */
+
+
+footer{
+    background-color: rgba(89, 86, 232, 0.10);
+    padding: 100px 0 100px;
+}
