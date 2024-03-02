@@ -164,6 +164,10 @@ nav .navbarBtn:hover {
     background-color: transparent;
 }
 
+.bannerImg{
+    cursor: pointer;
+}
+
 /* Banner CSS Ends */
 
 /* Service CSS Starts */
@@ -219,6 +223,7 @@ nav .navbarBtn:hover {
     -o-border-radius: 10px;
     color: var(--clr-primary);
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .serviceH2 {

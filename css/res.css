@@ -1,0 +1,102 @@
+@media (min-width: 320px) and (max-width: 575px){
+    #banner {
+        padding: 72px 0 88px;
+    }
+    .main_logo{
+        width: 72px;
+    }
+    .navMenu_icon{
+        font-size: 24px;
+    }
+    .navbar-nav {
+        margin-bottom: 18px;
+        gap: 6px !important;
+    }
+    .nav-link {
+        font-size: 14px !important;
+    }
+    nav .navbarBtn {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+    #banner h1 {
+        font-size: 34px;
+        line-height: 56px;
+        margin-bottom: 16px;
+    }
+    #banner p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #banner .bannerImg {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .cmnTitle h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    #service {
+        padding: 52px 0 70px;
+    }
+    .cmnTitle {
+        margin-bottom: 32px;
+    }
+    .cmnTitle p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .serviceIcon {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .serviceH2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .serviceText {
+        width: 100%;
+        font-size: 14px;
+    }
+   #service .row {
+        gap: 20px;
+    }
+    .portfolioContent .row{
+        gap: 20px;
+    }
+    .portfolioContent .imgBox {
+        display: flex;
+        justify-content: center;
+    }
+    #team .row{
+        gap: 20px;
+    }
+    #reviews {
+        padding: 0 0 70px 0;
+    }
+    .reviewTitle h2 {
+        width: 100%;
+        font-size: 32px;
+    }
+    .reviewTitle p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .reviewIcon {
+        gap: 2px;
+        font-size: 16px;
+    }
+    .reviewText {
+        width: 100%;
+        font-size: 14px;
+        margin: 16px 0 8px;
+    }
+    .reviewItem .customerName {
+        font-size: 16px;
+    }
+    .reviewItem .customerName__title {
+        font-size: 14px;
+    }
+}
